@@ -1,13 +1,10 @@
 package RestAssuredCases;
-
 /**
  * @Author ZhenZhong Zhu
  * @Date 2025/7/1 14:52
  * @Version 1.0
  * @Description ：用户接口信息数据
  */
-
-
 import io.qameta.allure.*;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -22,7 +19,6 @@ import static org.hamcrest.Matchers.hasItem;
 @Owner("zhenzhong zhu")
 @Feature("用户域数据")
 public class UserDataTest {
-
 
     @BeforeAll
     public static void setup() {

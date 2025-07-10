@@ -6,12 +6,17 @@ package junt5.demo;
  * @Version 1.0
  * @Description ：
  */
+import io.qameta.allure.Feature;
 import junt.test.service.Calculator;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+
+@Feature("计算域")
 public class CalculatorTest {
 
+    @DisplayName("测试加法用例")
     @Test
     public void testAdd() {
         Calculator calculator = new Calculator();
@@ -19,6 +24,7 @@ public class CalculatorTest {
         assertEquals(5, result, "2 + 3 should equal 5");
     }
 
+    @DisplayName("测试减法用例")
     @Test
     public void testSubtract() {
         Calculator calculator = new Calculator();
